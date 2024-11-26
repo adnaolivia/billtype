@@ -1,0 +1,27 @@
+st3=>start: start tipo_triangulo
+io5=>inputoutput: input: a, b, c
+cond9=>condition: if (((a + b) > c) and ((a + c) > b) and ((b + c) > a))
+cond14=>condition: if (a == b == c)
+sub18=>subroutine: print('Equilátero')
+e40=>end: end tipo_triangulo
+op43=>operation: a = float(input('lado a: '))
+op45=>operation: b = float(input('lado b: '))
+op47=>operation: c = float(input('lado c: '))
+op49=>operation: resultado = tipo_triangulo(a, b, c)
+sub51=>subroutine: print(f'O triângulo é: {resultado}')
+cond23=>condition: if ((a == b) or (b == c) or (a == c))
+sub27=>subroutine: print('Isósceles')
+sub31=>subroutine: print('Escaleno')
+sub37=>subroutine: print('Não é um triângulo válido')
+
+st3->io5
+io5->cond9
+cond9(yes)->cond14
+cond14(yes)->sub18
+sub18->e40
+e40->op43
+op43->op45
+op45->op47
+op47->op49
+op49->sub51
+cond14(no)->cond23
