@@ -21,4 +21,4 @@ resultado = tipo_triangulo(a, b, c)
 print(f"O triângulo é: {resultado}")
 '''
 flowchart = pyflowchart.Flowchart.from_code(code)
-flowchart.flowchart()
+print(flowchart.flowchart())
