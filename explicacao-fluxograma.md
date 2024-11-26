@@ -47,7 +47,10 @@ O fluxograma termina em e40, que é o ponto de término da função tipo_triangu
 # Explicação do Fluxo:
 O fluxo começa com a coleta dos dados de entrada (os lados do triângulo).
 O primeiro ponto crítico no fluxo é a verificação se os lados formam um triângulo válido.
+
 Se a condição for atendida, o fluxo passa por várias verificações para determinar o tipo do triângulo (equilátero, isósceles ou escaleno).
+
 Se a condição não for atendida, o fluxo imprime "Não é um triângulo válido".
 Finalmente, o programa imprime o tipo de triângulo ou uma mensagem de erro, e o processo é encerrado.
+
 Este fluxograma ajuda a visualizar a sequência de decisões e ações dentro da função tipo_triangulo do código, tornando mais fácil entender o fluxo lógico do programa.
