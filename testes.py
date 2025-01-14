@@ -1,13 +1,15 @@
-from main import tipo_triangulo
 
 class TestesTriangulo():
+
+    def __init__(self, tipo_triangulo_func):
+        self.tipo_triangulo = tipo_triangulo_func
 
     # Teste 1: Triângulo Equilátero
     def teste_triangulo_equilatero(self):
         a = 5
         b = 5
         c = 5
-        resultado = tipo_triangulo(a, b, c)
+        resultado = self.tipo_triangulo(a, b, c)
         assert resultado == "Equilátero", f"Erro no teste de equilátero: resultado = {resultado}"
         print("Teste Equilátero passou!")
 
@@ -17,7 +19,7 @@ class TestesTriangulo():
         a = 5
         b = 5
         c = 3
-        resultado = tipo_triangulo(a, b, c)
+        resultado = self.tipo_triangulo(a, b, c)
         assert resultado == "Isósceles", f"Erro no teste de isósceles: resultado = {resultado}"
         print("Teste Isósceles passou!")
 
@@ -27,6 +29,6 @@ class TestesTriangulo():
         a = 1
         b = 2
         c = 3
-        resultado = tipo_triangulo(a, b, c)
+        resultado = self.tipo_triangulo(a, b, c)
         assert resultado == "Não é um triângulo válido", f"Erro no teste de triângulo inválido: resultado = {resultado}"
         print("Teste Triângulo Inválido passou!")
