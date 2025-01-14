@@ -1,3 +1,6 @@
+# BILL TYPE
+- Diz o tipo de triângulo de acordo com as medidas passadas na entrada do programa
+
 ### crie um ambiente virtual
 ```python
 python -m venv venv
